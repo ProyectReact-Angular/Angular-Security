@@ -1,0 +1,54 @@
+<div class="">
+    <p>
+        <mat-toolbar>
+          <span>Agregar Articulo</span>
+        </mat-toolbar>
+      </p>
+      
+ 
+      <ng-container [formGroup]="formArticulos" class="container">
+
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>descripcion</mat-label>
+          <input matInput placeholder="descripcion" formControlName="descripcion">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>cantidad_um</mat-label>
+          <input matInput placeholder="Canitdad UM" formControlName="cantidad_um">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>precio_compra</mat-label>
+          <input matInput placeholder="precio_compra" formControlName="precio_compra">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>utilidad</mat-label>
+          <input matInput placeholder="utilidad" formControlName="utilidad">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>precio_venta</mat-label>
+          <input matInput placeholder="precio_venta" formControlName="precio_venta">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>stock</mat-label>
+          <input matInput placeholder="stock" formControlName="stock">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>iva</mat-label>
+          <input matInput placeholder="iva" formControlName="iva">
+        </mat-form-field>
+
+        <button type="submit" (click)="agregarUsuario()" [disabled]="formArticulos.invalid" mat-raised-button color="primary">Aceptar</button>
+
+        <br>
+        <br>
+      </ng-container>
+
+
+</div>
+

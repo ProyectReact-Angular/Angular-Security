@@ -1,0 +1,10 @@
+
+.container {
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+}
+
+  .example-full-width {
+    width: 100%;
+  }
